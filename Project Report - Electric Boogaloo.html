@@ -14576,9 +14576,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 title: "Project Report"
 subtitle: Electric Boogaloo
 author: Maddie Banich, Jackson Baker, Tanya Venkatesh 
-date: 02/27/2023
+date: 03/13/2023
 number-sections: true
-abstract: _The ABSTRACT is to be in fully-justified italicized text at the top of the report, below the author information. The abstract section must summarise the problem statement, the developed model(s), the metric(s) optimized and the recommendations to the stakeholders based on the model. You may also briefly mention any major EDA-based insights that helped develop the model or directly translated into recommendations to the stakeholders. However, the abstract must not be more than 200 words in length_.
+abstract: _This project explores movie characteristics and trends in gross revenue using the Kaggle Oscar Movies 2000-2017 dataset. The motivation for this project was to develop a better understanding of the characteristics of a movie in relation to profits and to develop a model that predicts gross with an accuracy better than chance. We began by performing exploratory data analysis to observe residual plot and decide whether the linearity and constant error assumptions were violated as well as discern the correlative relationships between quantitative variables and the target variable, gross. We created a multiple linear regression model informed by the EDA and binned awards nominations to reflect the non-linear distribution of movies within this category. To develop the model, we ran a variety of subset selection methods, compared their R2 and RMSE values, and found our EDA informed model to be better fit for inference and prediction. Observing the VIF values of our predictors helped us understand the moderate multicollinearity present in the dataset and helped us manage our expectations for prediction and shifted our focus toward inference. We recommend that our stakeholders consider expanding their viewer group with more inclusive ratings and focus on maximizing award nominations and good viewer reviews to improve gross revenue. We also learned that the movie industry is subject to year-by-year trends and is difficult to reliably predict with this dataset alone_.
 format: 
   html:
     toc: true
@@ -14932,18 +14932,6 @@ Therefore, we decided to change our response variable and focus on a linear prob
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Other-sections-(optional)">Other sections <em>(optional)</em><a class="anchor-link" href="#Other-sections-(optional)">&#182;</a></h2><p>You are welcome to introduce additional sections or subsections, if required, to address any specific aspects of your project in detail. For example, you may briefly discuss potential future work that the research community could focus on to make further progress in the direction of your project's topic.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Conclusions-and-Recommendations-to-stakeholder(s)">Conclusions and Recommendations to stakeholder(s)<a class="anchor-link" href="#Conclusions-and-Recommendations-to-stakeholder(s)">&#182;</a></h2>
 </div>
 </div>
@@ -15028,27 +15016,21 @@ table, td, th {
   </tr>
   <tr>
     <td>Jackson Baker</td>
-    <td>Data cleaning and EDA</td>
-    <td>Cleaned data to impute missing values and choose most relevant columns for investigation. Changed data type of some columns for effective use and added month columns. Examined variable distributions prior to beginning with the model. Developed visualizations to identify appropriate variable transformations and interactions.</td>
-    <td>100</td>
-  </tr>
-  <tr>
-    <td>Xena Valenzuela</td>
-    <td>Assumptions and interactions</td>
-    <td>Checked and addressed modeling assumptions and identified relevant variable interactions.</td>
-    <td>120</td>
-  </tr>
+    <td>Data cleaning and EDA, Assumptions and interactions</td>
+    <td>Cleaned data to impute missing values and choose most relevant columns for investigation. Changed data type of some columns for effective use and added month columns. Examined variable distributions prior to beginning with the model. Developed visualizations to identify appropriate variable transformations and interactions. Checked and addressed modeling assumptions.</td>
+    <td>12</td>
+</tr>
     <tr>
     <td>Tanya Venkatesh</td>
     <td>Outlier and influential points treatment, binning awards_nominations, producing the model</td>
     <td>Identified outliers/influential points and removed them from model. Created binned predictor variable to use in model. Created the linear model based on the EDA conclusions and made all predictors statistically significant. </td>
-    <td>130</td>    
+    <td>5</td>    
   </tr>
     <tr>
-    <td>Chun-Li</td>
-    <td>Variable selection and addressing overfitting</td>
-    <td>Performed variable selection on an exhaustive set of predictors to address multicollinearity and overfitting.</td>
-    <td>150</td>    
+    <td>Maddie Banich</td>
+    <td>Subset selection and comparison, VIF and multicollinearity concerns</td>
+    <td>Utilized forward stepwise without interactions, best subset without interactions, forward stepwise with interactions, and backward stepwise with interactions and compared R2 and RMSE values to EDA model and all predictors model, produce VIF table and interpreted to address collinearity</td>
+    <td>8</td>    
   </tr>
 </table>
 </div>
